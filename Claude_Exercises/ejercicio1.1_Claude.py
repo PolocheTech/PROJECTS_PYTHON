@@ -15,7 +15,4 @@ num1 = int(input("Ingresar numero1: "))
 operacion = str(input("Operacion +, -, /, *: "))
 num2 = int(input("Ingresar numero2: "))
 
-# print(f"resultado: {calculadora_basica(num1, operacion, num2)}")
-
-def tabla_multiplicar_ciclo():
-    pass
+print(f"resultado: {calculadora_basica(num1, operacion, num2)}")
