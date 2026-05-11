@@ -1,15 +1,14 @@
 def numeros_par_impar():
 
-    usuario = input("Ingresar numero: ")
-    numeros = "0123456789"
+    usuario = input("Ingresar numeros separados por coma: ").split(",")
 
-    for i in usuario: 
-        if i in numeros:
+    for i in usuario:
+        try: 
             if int(i) % 2 == 0:
                 print(f"El numero {i} es par")
-            elif int(i) % 2 == 1:
-                print(f"El numero {i} es impar")
             else:
-                print("Valor incorrecto")
+                print(f"El numero {i} es impar")
+        except ValueError:
+            print("[Solo ingresa 'numeros' no ingreses letras]")
 
 numeros_par_impar()
